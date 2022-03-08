@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;700&family=Roboto:wght@100;400;700&display=swap');
+
+/* Root and Miscellaneous*/
+:root {
+    --color-black: #000;
+    --color-white: #fff;
+    --color-grey: #272729;
+    --color-offwhite: #cccccc;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    font-size: 16px;
+  }
+
+ul {
+    list-style-type: none;
+}
+
+/* Navbar */
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: var(--color-black);
+}
+
+.navbar-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-black);
+    padding: 1rem 3rem;
+}
+
+.navbar-links .nav__light a{
+    font-weight: 100;
+    font-size: 0.8rem;
+    margin-right: 2rem;
+    color: var(--color-offwhite);
+    text-decoration: none;
+    
+}
+
+.navbar-links .nav__light a:hover{
+    color: var(--color-white);
+    transition: 0.8s;
+}
