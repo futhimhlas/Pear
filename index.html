@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,21 +11,39 @@
     <link rel="stylesheet" href="./assets/css/index.css">
     <script src="https://kit.fontawesome.com/1635021063.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-        <nav class="navbar">
-            <ul class="navbar-links">
-                <li class="nav__light"><a href="#home"><i class="fa fa-solid fa-seedling"></i></a></li>
-                <li class="nav__light"><a href="#">Store</a></li>
-                <li class="nav__light"><a href="#">Mac</a></li>
-                <li class="nav__light"><a href="#">iPad</a></li>
-                <li class="nav__light"><a href="#">iPhone</a></li>
-                <li class="nav__light"><a href="#">Watch</a></li>
-                <li class="nav__light"><a href="#">AirPods</a></li>
-                <li class="nav__light"><a href="#">TV & Home</a></li>
-                <li class="nav__light"><a href="#">Only on Apple</a></li>
-                <li class="nav__light"><a href="#">Accessories</a></li>
-                <li class="nav__light"><a href="#">Support</a></li>
-            </ul>
-        </nav>
+
+    <!--Nav menu-->
+    <nav class="navbar">
+        <ul class="navbar-links">
+            <li class="nav__light"><a href="#home"><i class="fa fa-solid fa-seedling"></i></a></li>
+            <li class="nav__light"><a href="#">Store</a></li>
+            <li class="nav__light"><a href="#">Mac</a></li>
+            <li class="nav__light"><a href="#">iPad</a></li>
+            <li class="nav__light"><a href="#">iPhone</a></li>
+            <li class="nav__light"><a href="#">Watch</a></li>
+            <li class="nav__light"><a href="#">AirPods</a></li>
+            <li class="nav__light"><a href="#">TV & Home</a></li>
+            <li class="nav__light"><a href="#">Only on Apple</a></li>
+            <li class="nav__light"><a href="#">Accessories</a></li>
+            <li class="nav__light"><a href="#">Support</a></li>
+        </ul>
+    </nav>
+
+    <!-- Mobile menu-->
+            <!--Hamburger Menu btn-->
+            <button type="button" class="hamburger" id="menu-btn">
+                <span class="hamburger-top"></span>
+                <span class="hamburger-bot"></span>
+            </button>
+    <div class="mobile__menu hidden" id="menu">
+        <ul>
+            <li>1</li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+        </ul>
+    </div>
 </body>
+<script src="./assets/javascript/menu.js"></script>
 </html>
