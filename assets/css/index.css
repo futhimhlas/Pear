@@ -20,19 +20,22 @@ ul {
     list-style-type: none;
 }
 
+.container {
+    width: 100%;
+}
 /* Navbar */
 .navbar {
     width: 100%;
     display: flex;
     justify-content: center;
-    background: var(--color-black);
+    background: var(--color-grey);
 }
 
 .navbar-links {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--color-black);
+    background-color: var(--color-grey);
     padding: 1rem 3rem;
 }
 
@@ -42,12 +45,11 @@ ul {
     margin-right: 2rem;
     color: var(--color-offwhite);
     text-decoration: none;
-    
 }
 
 .navbar-links .nav__light a:hover{
     color: var(--color-white);
-    transition: 0.8s;
+    transition: 0.9s;
 }
 
 /* Mobile menu*/
@@ -56,9 +58,19 @@ ul {
     width: 18px;
     height: 18px;
     position: relative;
-    background: black;
+    background: none;
     border: none;
     z-index: 100;
+    display: none;
+}
+
+.mobile-backgroundColor {
+    background: var(--color-black)!important;
+}
+
+.hamburger__menu{
+    background: var(--color-grey);
+    padding: 10px;
     display: none;
 }
 
@@ -71,7 +83,7 @@ ul {
     height: 2px;
     background: var(--color-white);
     z-index: 101;
-    transition: 0.5s;
+    transition: 0.9s;
 }
 /*Stacks lines on top of one another*/
 
@@ -89,6 +101,10 @@ ul {
 }
 /* Gives rotation*/
 
+.hamburger__logo-mid{
+    color: var(--color-offwhite);
+}
+
 .mobile__menu {
     position: fixed;
     top: 25px;
@@ -97,16 +113,56 @@ ul {
     color: #fff;
     width: 100%;
     height: 100%;
-    transition: all 0.5s;
+    transition: all 0.9s;
+    margin-top: 10px;
 }
 
 .hidden {
-    transform: translateY(-100%);
+    transform: translateY(-110%);
 }
 /* This pushes our div up*/
 
 .no-scroll {
     overflow: hidden;
+}
+
+.mobile__list{
+    display: flex;
+    width: 85%;
+    flex-direction: column;
+    margin: 0px auto;
+    font-weight: 100;
+    
+}
+
+.nav__mobile:first-child{
+    border: none;
+}
+
+.mobile__search-wrap {
+    border-bottom: 1px solid var(--color-offwhite);
+}
+
+.mobile__search {
+    width: 96%;
+    margin: 15px auto;
+    background: var(--color-grey);
+    padding: 7px;
+    border-radius: 0.5rem;
+    border: none;
+    display: flex;
+
+}
+
+.nav__mobile {
+    border-top: 1px solid var(--color-offwhite);
+    padding-top: 12px ;
+    padding-bottom: 12px ;
+}
+
+.nav__mobile a{
+    color: var(--color-offwhite);
+    text-decoration: none;
 }
 
 /*Media queries*/
@@ -117,5 +173,11 @@ ul {
     
     .hamburger{
         display: block;
+    }
+    
+    .hamburger__menu{
+        display: flex;
+        color: var(--color-black);
+        justify-content: space-between;
     }
 }
