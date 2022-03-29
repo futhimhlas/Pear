@@ -227,7 +227,7 @@ ul {
 }
 
 .footer__wrap {
-    width: 80%;
+    width: 60%;
     margin: 0 auto;
 }
 
@@ -235,6 +235,14 @@ ul {
     color: var(--color-grey);
     font-weight: 100;
     justify-content: center;
+}
+
+.footer__links {
+    display: flex;
+}
+
+.footer__columns {
+    margin: 10px 15px;    
 }
 
 /* Mobile menu*/
